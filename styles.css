@@ -1,0 +1,82 @@
+.reveal-section {opacity:0;transform:translateY(30px);transition:opacity .8s ease-out,transform .8s ease-out;}
+.reveal-section.active {opacity:1;transform:translateY(0);}
+.feature-block {background:rgba(255,255,255,0.06);padding:40px;border-radius:15px;margin:40px 0;} /* Opacidade ajustada */
+.feature-block h2 {text-align:center;color:#ffd700;margin-bottom:30px;}
+.feature-grid {display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));gap:20px;} /* Largura mínima ajustada */
+.feature-card {background:rgba(255,255,255,0.1);border-radius:10px;padding:20px;text-align:center;transition:transform .3s;width:100%;max-width:350px;}
+.feature-card:hover {transform:translateY(-5px);}
+.feature-card img {width:34px;height:34px;margin-bottom:5px;}
+.feature-card h3 {font-size:1.3em;margin-bottom:10px;color:#ffd700;}
+.perks-block {background:rgba(255,255,255,0.06);padding:40px;border-radius:15px;margin:40px 0;} /* Opacidade ajustada */
+.perks-block h2 {text-align:center;color:#ffd700;margin-bottom:20px;}
+.perks-content {max-width:800px;margin:0 auto;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.promo-boxes {display:grid;grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));gap:20px;}
+.promo-item {border:2px solid #ffdb4d;border-radius:10px;padding:15px;text-align:center;width:100%;max-width:200px;} /* Cor da borda ajustada */
+.promo-item .promo-rate {font-size:2.5em;color:#ffd700;font-weight:bold;margin-bottom:10px;display:block;}
+.perks-list ul {list-style:none;}
+.perks-list li {margin:15px 0;padding-left:30px;position:relative;}
+.perks-list li:before {content:"✔";color:#ffd700;position:absolute;left:0;}
+.perks-note {text-align:center;font-size:.9em;color:#ccc;margin-top:20px;}
+.odds-block {background:rgba(255,255,255,0.06);padding:40px;border-radius:15px;margin:40px 0;} /* Opacidade ajustada */
+.odds-block h2 {text-align:center;color:#ffd700;margin-bottom:20px;}
+.odds-block p {text-align:center;color:#ccc;font-size:1em;margin-bottom:15px;}
+.odds-table {width:100%;max-width:800px;margin:0 auto;border-collapse:collapse;}
+.odds-table th, .odds-table td {padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.2);}
+.odds-table th {background:rgba(255,215,0,0.1);color:#ffd700;}
+.odds-table td:nth-child(2) {text-align:right;color:#ffd700;}
+.quick-action {position:fixed;bottom:20px;right:20px;background:#ffd700;color:#1a1a2e;padding:12px 20px;border-radius:40px;text-decoration:none;font-weight:bold;box-shadow:0 5px 15px rgba(255,215,0,0.4);transition:opacity .3s;} /* Raio ajustado */
+.quick-action.hidden {opacity:0;pointer-events:none;}
+.cta-section {text-align:center;margin:40px 0;}
+.cta-image {width:100%;max-width:400px;height:auto;margin:0 auto 20px;border-radius:14px;overflow:hidden;} /* Raio ajustado */
+.cta-details {border:2px solid #ffd700;padding:20px;border-radius:15px;}
+.cta-title {font-size:1.8em;color:#fff;margin-bottom:20px;}
+.cta-button {display:inline-block;background:#ffd700;color:#1a1a2e;padding:15px 25px;border-radius:50px;text-decoration:none;font-weight:bold;transition:transform .3s;}
+.cta-button:hover {transform:scale(1.1);}
+.cta-subtitle {font-size:1.2em;color:#ffd700;margin:20px 0;}
+.review-block {background:rgba(255,255,255,0.06);padding:20px;border-radius:15px;margin:20px 0;} /* Opacidade ajustada */
+.review-block h3 {text-align:center;color:#ffd700;margin-bottom:20px;font-size:1.5em;}
+.review-container {position:relative;overflow-x:auto;width:100%;max-width:1200px;margin:0 auto;-ms-overflow-style:none;scrollbar-width:thin;scrollbar-color:#d9d9d9 transparent;} /* Cor do scrollbar ajustada */
+.review-container::-webkit-scrollbar {height:6px;}
+.review-container::-webkit-scrollbar-track {background:transparent;}
+.review-container::-webkit-scrollbar-thumb {background:#d9d9d9;border-radius:6px;} /* Cor do thumb ajustada */
+.review-container::-webkit-scrollbar-thumb:hover {background:#ffd700;}
+.review-container::-webkit-scrollbar-button {background:#d9d9d9;width:6px;height:6px;} /* Cor ajustada */
+.review-list {display:flex;gap:18px;overflow-x:auto;} /* Gap ajustado */
+.review-item {flex:0 0 300px;background:rgba(255,255,255,0.1);border-radius:10px;padding:20px;text-align:center;}
+.review-item .stars {color:#ffd700;font-size:1.2em;margin-bottom:10px;}
+.review-item p {font-size:1em;color:#fff;margin-bottom:10px;}
+.review-item span {display:block;font-style:italic;color:#ccc;font-size:.9em;}
+.feedback-link {text-align:center;margin-top:20px;}
+.feedback-link a {color:#fff;text-decoration:none;font-size:1em;transition:color .3s ease;}
+.feedback-link a:hover {color:#ffd700;}
+.success-alert {position:fixed;top:20px;left:20px;background:#28a745;color:#fff;padding:10px 20px;border-radius:8px;font-size:1em;opacity:0;transform:translateY(-20px);transition:opacity .5s ease,transform .5s ease;z-index:1000;max-width:300px;box-shadow:0 4px 8px rgba(0,0,0,0.2);}
+.success-alert.active {opacity:1;transform:translateY(0);}
+footer {padding:20px;text-align:center;border-top:1px solid rgba(255,255,255,0.2);margin-top:40px;}
+footer p {font-size:.9em;color:#ccc;}
+footer a {color:#ffd700;text-decoration:none;}
+footer a:hover {text-decoration:underline;}
+.welcome h1 {margin-top:10px;}
+.menu-toggle img {width:24px;height:24px;vertical-align:middle;}
+@media (max-width: 768px) {
+    .feature-grid {grid-template-columns:repeat(2, 1fr);gap:15px;}
+    .feature-card {height:auto;min-width:0;max-width:none;padding:15px;}
+    .feature-card img {width:34px;height:34px;}
+    .feature-card h3 {font-size:1.2em;}
+    .welcome h1 {font-size:1.5em;margin-top:80px;}
+    .feature-block, .perks-block, .odds-block {padding:20px;}
+    .feature-block h2, .perks-block h2, .odds-block h2 {font-size:1.6em;}
+    .menu-toggle {display:block;}
+    .nav-items {display:none;flex-direction:column;position:absolute;top:100%;left:0;width:100%;background:rgba(26,26,46,0.95);padding:15px 0;z-index:20;}
+    .nav-items.visible {display:flex;}
+    .nav-items a {margin:10px 0;font-size:1em;text-align:center;}
+    .nav-logo {font-size:1.2em;margin-left:20px;}
+    .quick-action {bottom:15px;right:15px;padding:10px 15px;}
+    .review-container {overflow-x:auto;padding:0 10px;scrollbar-width:none;}
+    .review-container::-webkit-scrollbar {display:none;}
+    .review-list {overflow-x:auto;-webkit-overflow-scrolling:touch;gap:10px;}
+    .review-item {flex:0 0 calc(100% - 50px);}
+}
+@media (max-width: 480px) {
+    .cta-title {font-size:1.4em;}
+    .cta-subtitle {font-size:1em;}
+}
